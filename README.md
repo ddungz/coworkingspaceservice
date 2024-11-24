@@ -153,7 +153,7 @@ kubectl apply -f deployment/coworking.yaml
 
 ```bash
 aws iam attach-role-policy \
---role-name eksctl-coworking-space-cluster-nod-NodeInstanceRole-UGcqqhDeUNVh \
+--role-name eksctl-coworking-space-cluster-nod-NodeInstanceRole-DNnfxY1Xn69D \
 --policy-arn arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy
 ```
 

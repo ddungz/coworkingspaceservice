@@ -1,0 +1,4 @@
+http://ac0d342058d364285950be6c8c955442-416018798.us-east-1.elb.amazonaws.com:5153/health_check
+http://ac0d342058d364285950be6c8c955442-416018798.us-east-1.elb.amazonaws.com:5153/readiness_check
+http://ac0d342058d364285950be6c8c955442-416018798.us-east-1.elb.amazonaws.com:5153/api/reports/daily_usage
+http://ac0d342058d364285950be6c8c955442-416018798.us-east-1.elb.amazonaws.com:5153/api/reports/user_visits
