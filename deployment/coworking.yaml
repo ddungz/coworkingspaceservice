@@ -16,8 +16,10 @@ spec:
     spec:
       containers:
       - name: coworking
-        image: 615813276267.dkr.ecr.us-east-1.amazonaws.com/coworking/coworkingrepo:latest
-        imagePullPolicy: IfNotPresent
+        image: 615813276267.dkr.ecr.us-east-1.amazonaws.com/coworking-space/coworkingrepo:latest
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 5153
         livenessProbe:
           httpGet:
             path: /health_check
@@ -26,16 +28,16 @@ spec:
           timeoutSeconds: 2
         readinessProbe:
           httpGet:
-            path: "/readiness_check"
+            path: /readiness_check
             port: 5153
           initialDelaySeconds: 5
           timeoutSeconds: 5
         resources:
           requests:
-            memory: "1000Mi"
+            memory: "512Mi"
             cpu: "250m"
           limits:
-            memory: "2000Mi"
+            memory: "1Gi"
             cpu: "500m"
         envFrom:
         - configMapRef:
@@ -46,7 +48,7 @@ spec:
             configMapKeyRef:
               name: coworking-configmap
               key: DB_NAME
-        - name: DB_USER
+        - name: DB_USERNAME
           valueFrom:
             configMapKeyRef:
               name: coworking-configmap

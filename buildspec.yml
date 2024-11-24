@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    IMAGE_REPO_NAME: coworking/coworkingrepo
+    IMAGE_REPO_NAME: coworking-space/coworkingrepo
     IMAGE_TAG: latest
 
 phases:

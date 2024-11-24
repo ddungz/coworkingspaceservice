@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPOSITORY_NAME="coworking/coworkingrepo"
+REPOSITORY_NAME="coworking-space/coworkingrepo"
 REGION="us-east-1"
 
 if [ "$1" -a "$2" ]; then
