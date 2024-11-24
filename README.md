@@ -182,7 +182,7 @@ aws eks create-addon --addon-name amazon-cloudwatch-observability --cluster-name
 8. All Kubernetes config files used for deployment (ie YAML files)
     `./deployment/*`
 9. Screenshot of AWS CloudWatch logs for the application
-![alt text](./screenshots/9.Cloudwatch-application.png)
+    ![alt text](./screenshots/9.Cloudwatch-application.png)
 10. `README.md`
 
 
