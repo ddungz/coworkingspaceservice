@@ -203,7 +203,6 @@ resources:
 2. AWS instance type would be best used for the application
 - For AWS instance type, Memory and CPU allocation considerations, it's depends on workloads and active users of this application, cost efficiency also a important factor to consider. We are using Load Balancer and Auto Scaling group to scale horizontally if user activity varies sigfinicantly. So a `t3.medium` may be a good starting point for light workloads.
 
-```
 
 3. How we can save on costs?
 - Using Spot Instances with right size t3.medium could reduce usage cost.
